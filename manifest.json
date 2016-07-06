@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "PrayerWall",
+	"description": "A prayer wall for better life together",
+	"version": "1.0",
+
+	"permissions": [
+		"management"
+	],
+
+        "chrome_url_overrides": {
+          "newtab": "app/index.html"
+        }
+}
