@@ -1,0 +1,40 @@
+<div id="apps">
+  <md-card flex>
+    <md-card-title>
+      <md-card-title-text class="md-title">
+        Future site of our amazing Pray app!
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      <div>
+        Hello Helen and Anna :)<br>
+        Press this button to load all the prayers currently in the system<br>
+      </div>
+      <md-card-actions>
+        <md-button ng-click="ctrl.getAllPrayers()">
+          PRAY 
+        </md-button>
+      </md-card-actions>
+      <div>
+        Type Ctrl + Shift + i to open the console and see what's happening!
+      </div>
+      <div>
+      <div ng-repeat="prayer in ctrl.prayers">
+        <md-card>
+          <md-card-header>
+            <md-card-header-text>
+              <span class="md-title">{{prayer.fields.user_name}}</span>
+              <span>{{prayer.fields.publish_date | formatTimestamp}}</span>
+            </md-card-header-text>
+          </md-card-header>
+          <md-card-content>
+            <p>
+              {{prayer.fields.request_text}}
+            </p>
+          </md-card-content>
+        </md-card>
+      </div>
+    </md-card-content>
+  </md-card>
+</div>
+

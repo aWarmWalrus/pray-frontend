@@ -5,10 +5,13 @@
 	"version": "1.0",
 
 	"permissions": [
-		"management"
+		"management",
+                "https://salty-cliffs-76440.herokuapp.com/"
 	],
 
         "chrome_url_overrides": {
           "newtab": "app/index.html"
-        }
+        },
+
+        "icons": { "16": "app/img/icon16.png" }
 }
